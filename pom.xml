@@ -9,11 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>mini-provider</module>
-        <module>mini-consumer</module>
+        <module>mini-provider1</module>
         <module>mini-eureka</module>
         <module>mini-feign</module>
         <module>mini-provider2</module>
+        <module>mini-api</module>
     </modules>
 
     <parent>
@@ -28,11 +28,4 @@
         <java.version>1.8</java.version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 </project>

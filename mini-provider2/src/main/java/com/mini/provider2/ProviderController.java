@@ -1,9 +1,7 @@
 package com.mini.provider2;
 
+import com.mini.feign.api.ScheduleServiceHi;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @version 1.0
  */
 @RestController
-public class ProviderController {
+public class ProviderController implements ScheduleServiceHi {
     @Value("${server.port}")
     private String port;
 
-    @RequestMapping(value = "/hi/{name}", method = RequestMethod.GET)
-    public String home(@PathVariable String name) {
+    @Override
+    public String sayHiFromClientOne(String name) {
         return "hi " + name + ", i am from port:" + port;
     }
 }

@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
  * @author shipc 2019/6/17 18:47
  * @version 1.0
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.mini"})
 @EnableDiscoveryClient
 @EnableFeignClients
 public class FeignStart {

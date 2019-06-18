@@ -9,14 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mini-feign</artifactId>
-
+    <artifactId>mini-api</artifactId>
     <dependencies>
-        <dependency>
-            <artifactId>mini-api</artifactId>
-            <groupId>springCloud</groupId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter</artifactId>
@@ -61,10 +55,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-jar-plugin</artifactId>-->
-<!--            </plugin>-->
         </plugins>
     </build>
     <repositories>
@@ -77,5 +67,6 @@
             </snapshots>
         </repository>
     </repositories>
+
 
 </project>
